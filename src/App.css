@@ -1,38 +1,278 @@
-.App {
+/* Nulling default CSS styles */
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+}
+*, *:before, *:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textareas{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration:none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+/* End of nulling */
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #828282;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+/* SCROLLBAR END*/
+
+.logo img{
+  width: 250px;
+  margin: auto;
+  height: 250px;
+  border-radius: 50%;
+  padding-top: 45px;
+}
+
+
+.square{
+  background-color: #87b677;
+  height: 100%;
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #f4f4f4
+}
+
+.btn{
+  font-size: 25px;
+  color: #f4f4f4;
+  padding: 15px;
+  border: 3px solid;
+  border-radius: 25px;
+  width: 352px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.btn-confirm{
+  font-size: 25px;
+  color: #f4f4f4;
+  background-color: #87b677;
+  border: 3px solid #f5f5f5;
+  border-radius: 25px;
+  width: 352px;
+  padding: 13px;
+
+}
+
+.btn-container{
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+.separator{
+  font-size: 25px;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 20px;
+}
+
+.change-language{
+  position: relative;
+  width: 70px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.change-language h4{
+  position: absolute;
+  width: 100%;
+  top: 27px;
+  font-weight: bold;
+}
+
+.bottom-link{
+  padding: 50px
+}
+
+.bottom-link a{
+  text-align: bottom;
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.31;
+
+}
+
+input {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-input-placeholder {
+text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:-moz-placeholder {
+text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input{
+  font-size: 30px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.ovalino-tag{
+  font-size: 21px;
+}
+.ovalino{
+  background-color: #f5f5f5;
+  font-size: 27px;
+  color: #497109;
+  max-height: 70px;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ovalino p{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
+
+.disabled{
+  background-color: #D0D0D0;
+  color: #7a7a7a;
+  font-size: 21px;
+}
+
+.separator-25{
+  height: 25px;
+}
+.separator-50{
+   height: 50px;
+}
+
+.save-button{
+  font-size: 20px;
+  width: 240px;
+}
+
+.add-button{
+  font-size: 20px;
+  height: 50px;
+  width: 80px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.input-add{
+  height: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.save-button:hover, .add-button:hover, .button-yes:hover, .button-no:hover{
+  background-color: #d0d0d0;
+}
+
+.interests{
+  margin-top: 10px;
+  background-color: #d0d0d0;
+  height: 181px;
+  width: 240px;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  overflow: auto;
+
+
+}
+
+.interest-item{
+  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 500;
+  color: #497109;
+  padding: 8px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+
+
+.interest-text p{
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+.button-yes{
+  font-size: 20px;
+  height: 50px;
+  width: 120px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.button-no{
+  font-size: 20px;
+  height: 50px;
+  width: 120px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.profile-image{
+  border-radius: 50%;
+  margin-top: 30px;
+  width: 360px;
+  height: 360px;
+  margin-bottom: 30px;
+
+}
+
+
