@@ -33,7 +33,7 @@ const Home = (props: { name: string }) => {
         });
     }, []);
     if (props.name) {
-
+        
 
         let lI = interests.map((item) => (
             <div className="interest-item">

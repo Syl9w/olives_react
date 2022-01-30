@@ -5,6 +5,7 @@ import Navigation from './components/nav';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/register'
+import Olives from './pages/Olives'
 
 function App() {
   const [name, setName] = useState('');
@@ -31,6 +32,7 @@ function App() {
               <Route path="/" element={<Home name={name}/>}/>
               <Route path="/login" element={<Login setName={setName}/>}/>
               <Route path="/register" element={<Register/>}/>
+              <Route path="/olives" element={<Olives/>}/>
             </Routes>
           
         </main>

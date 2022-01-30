@@ -31,6 +31,9 @@ const Navigation = (props: {name: string, setName: (name:string) => void}) => {
                     <li className="nav-item">
                     <Link to="/login" className="nav-link active" onClick={logout}>Logout</Link>
                     </li>
+                    <li className="nav-item">
+                    <Link to="/olives" className="nav-link active" >Olives</Link>
+                    </li>
                 </ul>
         )
     }

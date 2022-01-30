@@ -276,3 +276,64 @@ text-align: center;
 }
 
 
+
+.friends-list{
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.ps-box{
+  width: 380px;
+  height: 147px;
+  background-color: #465666;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  padding: 19px;
+  border-radius: 300px;
+  margin-bottom: 15px;
+  opacity: 85%;
+  overflow: auto;
+
+}
+
+.ps-avatar img{
+  width: 110px;
+  height: 110px;
+  margin: auto 0;
+  border-radius: 50%;
+
+
+
+}
+
+.ps-avatar{
+
+
+}
+
+.ps-text{
+  padding-left: 10px;
+  text-align: left;
+  color: white;
+
+}
+
+.ps-name{
+  height: 50%;
+  width: 100%;
+}
+
+.ps-name h2{
+  font-size: 40px;
+}
+
+.ps-interests{
+  height: 50%;
+  width: 100%;
+}
+
+
+
