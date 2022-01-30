@@ -14,41 +14,25 @@ const Navigation = (props: {name: string, setName: (name:string) => void}) => {
 
     let menu;
     if(props.name===undefined){
-        menu = (
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                    <li className="nav-item">
-                    <Link to="/login" className="nav-link active">Login</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/register" className="nav-link active">Register</Link>
-                    </li>
-                </ul>
-        )
     }
     else{
         menu = (
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                    <li className="nav-item">
-                    <Link to="/login" className="nav-link active" onClick={logout}>Logout</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/olives" className="nav-link active" >Olives</Link>
-                    </li>
-                </ul>
+            <div className="square">
+                <div className="navigation">
+                    <Link to="/" className="navbar-brand"><a href="profile.html">PROFILE</a></Link>
+                    <Link to="/olives" className="navbar-brand"> <a href="frindslist.html">OLIVES</a></Link>
+                    <Link to="/" className="navbar-brand" onClick={logout}><a href="index.html">LOG OUT</a></Link>
+                </div>
+            </div>
         )
     }
 
     console.log("name: "+ props.name);
 
     return (
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-            <div className="container-fluid">
-                <Link to="/" className="navbar-brand">Olives</Link>
-                <div className="collapse navbar-collapse" id="navbarCollapse">
-                    {menu}
-                </div>
-            </div>
-        </nav>
+        
+                  <>  {menu}</>
+                
     );
 };
 
